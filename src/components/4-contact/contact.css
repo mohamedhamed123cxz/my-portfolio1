@@ -1,0 +1,108 @@
+
+.animation{
+    /* background-color: blue; */
+    flex-grow: 1;
+}
+section.contactUs{
+    margin-bottom: 100px;
+}
+section.contactUs .icon-envelope{
+    color: var(--subTitle);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+section.contactUs .title{
+    font-size: 2.1rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+}
+section.contactUs .subTitle{
+    color: var(--subTitle);
+    margin-bottom: 2rem;
+    line-height: 1.65rem;
+}
+section.contactUs label{
+    color: var(--subTitle);
+}
+section.contactUs form div.flex{
+    display:flex ;
+    align-items:center;
+}
+section.contactUs #email ,section.contactUs #message{
+    all:unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: var(--title);
+}
+section.contactUs #email:hover ,section.contactUs #message:hover{
+    border: 1px solid var(--main-color);
+}
+section.contactUs #email:focus ,section.contactUs #message:focus{
+    border: 1px solid var(--main-color);
+}
+section.contactUs #message{
+    min-height: 9rem;
+    resize: vertical;
+}
+section.contactUs .submit{
+    background-color: rgba(36, 37, 46, 1);
+    padding:0.5rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    border-radius:5px;
+    transition:0.3s;
+    margin-top: 1.8rem;
+}
+section.contactUs .submit:hover{
+scale: 0.9;
+background-color: var(--main-color);
+}
+
+.msgThanks{
+    font-size: 30px;
+    color: var(--main-color);
+    margin-bottom: 100px;
+}
+
+
+
+
+
+@media (max-width: 600px){
+    .animation{
+        display: none;
+    }
+    section.contactUs form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    section.contactUs form div.flex{
+        flex-direction: column;
+        align-items: start;
+    }
+    section.contactUs label{
+        margin-bottom: 1rem;
+    }
+    section.contactUs .submit{
+        padding:0.5rem 0rem;
+        width: 35%;
+        align-self: center;
+    }
+    section.contactUs #email ,section.contactUs #message{
+        margin-left: 0;
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+
+    
+}
+
+
+
+

@@ -1,0 +1,106 @@
+main.flex{
+    gap: 2.64rem;
+    align-items: start; 
+}
+
+/* (1) left section */
+.leftSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.leftSection button{
+    background-color: rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    opacity: 0.5;
+    border-radius:5px;
+    transition:0.3s;
+}
+.leftSection button:hover{
+    opacity: 1;
+}
+.leftSection button.active{
+    opacity: 1;
+    border: 3px solid var(--main-color);
+    font-weight: bold;
+}
+
+/* (2) right section */
+.rightSection{
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card{
+    border: 1px solid rgb(161,161,170,0.5);
+    border-radius: 5px;
+    transition: 0.3s;
+    background-image: linear-gradient(
+        rgba(255,255,255,0.05), rgba(255,255,255,0.05)
+    );
+}
+.card:hover{
+    border: 1px solid var(--main-color);
+    rotate: 2deg;
+    scale: 1.02;
+}
+.card img{
+    border-radius: 5px;
+}
+.card .box{
+    padding: 1rem 0.4rem;
+}
+.card .box .title{
+    color: var(--title);
+}
+.card .box .subTitle{
+    color: var(--subTitle);
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.1rem;
+}
+.card .box .icons{
+    justify-content: space-between;
+}
+.card .icon-github , .card .icon-link{
+    color: var(--subTitle);
+    font-size: 1.2rem;
+}
+.card .icon-github:hover , .card .icon-link:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.card a.link{
+    font-size: 0.9rem;
+    color: var(--main-color);
+    margin-right: 12px;
+}
+
+
+
+
+@media (max-width: 600px){
+    main.flex{
+        flex-direction: column;
+        gap: 2.64rem;
+        align-items: center; 
+    }
+    .leftSection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .leftSection button{
+        width: 7rem;
+        padding: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+}
