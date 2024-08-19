@@ -18,7 +18,7 @@ export default function Hero() {
 
 
            <span>
-           <a target='_blank' href="https://drive.google.com/file/d/1tDhMU6kdPLnUuhcLKIU0MEUE6kC-QhlC/view?usp=sharing">view my cv</a>
+           <a target='_blank' href="https://drive.google.com/file/d/1-yXqqAPsexHZrcHxVqJV1-oJ7giuVdfq/view?usp=sharing">view my cv</a>
            </span>
            </p>
            
